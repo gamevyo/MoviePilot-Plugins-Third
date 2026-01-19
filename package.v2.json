@@ -1,7 +1,7 @@
 {
     "DownloaderHelper": {
         "name": "下载器助手魔改版",
-        "description": "自动标签、自动做种、自动删种。",
+        "description": "自动标签、自动做种、自动删种，自用插件，魔改自hotlcc大佬",
         "labels": "下载管理,仪表板",
         "version": "5.0.6",
         "release": true,
