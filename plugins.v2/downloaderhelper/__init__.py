@@ -30,15 +30,15 @@ from app.utils.string import StringUtils
 
 class DownloaderHelper(_PluginBase):
     # 插件名称
-    plugin_name = "下载器助手"
+    plugin_name = "下载器助手魔改版"
     # 插件描述
-    plugin_desc = "自动标签、自动做种、自动删种。"
+    plugin_desc = "自动标签、自动做种、自动删种，自用插件，魔改自hotlcc大佬"
     # 插件图标
     plugin_icon = "https://raw.githubusercontent.com/hotlcc/MoviePilot-Plugins-Third/main/icons/DownloaderHelper.png"
     # 插件版本
-    plugin_version = "4.0.6"
+    plugin_version = "5.0.6"
     # 插件作者
-    plugin_author = "hotlcc"
+    plugin_author = "gamevyo"
     # 作者主页
     author_url = "https://github.com/hotlcc"
     # 插件配置项ID前缀
@@ -217,7 +217,7 @@ class DownloaderHelper(_PluginBase):
             'listen_download_event': True,
             'listen_source_file_event': True,
             'cron': '0/30 * * * *',
-            'exclude_tags': 'BT,刷流',
+            'exclude_tags': '刷流',
             'dashboard_widget_refresh': 5,
             'dashboard_speed_widget_refresh': 5,
         }
@@ -2021,10 +2021,10 @@ class DownloaderHelper(_PluginBase):
         add_tags = []
 
         # 处理BT/PT标签
-        if "BT" not in torrent_tags and "PT" not in torrent_tags:
-            is_private = self.__check_private_torrent_for_qbittorrent(qbittorrent=qbittorrent, hash_str=hash_str)
-            btpt_tag = "PT" if is_private else "BT"
-            add_tags.append(btpt_tag)
+       # if "BT" not in torrent_tags and "PT" not in torrent_tags:
+       #     is_private = self.__check_private_torrent_for_qbittorrent(qbittorrent=qbittorrent, hash_str=hash_str)
+       #     btpt_tag = "PT" if is_private else "BT"
+       #     add_tags.append(btpt_tag)
 
         # 处理站点标签
         # BT种子与站点无关，故排除BT标签
@@ -2363,10 +2363,10 @@ class DownloaderHelper(_PluginBase):
         add_tags = []
 
         # 处理BT/PT标签
-        if "BT" not in torrent_tags and "PT" not in torrent_tags:
-            is_private = self.__check_private_torrent_for_transmission(torrent=torrent)
-            btpt_tag = "PT" if is_private else "BT"
-            add_tags.append(btpt_tag)
+       # if "BT" not in torrent_tags and "PT" not in torrent_tags:
+       #     is_private = self.__check_private_torrent_for_transmission(torrent=torrent)
+       #     btpt_tag = "PT" if is_private else "BT"
+       #     add_tags.append(btpt_tag)
 
         # 处理站点标签
         # BT种子与站点无关，故排除BT标签
