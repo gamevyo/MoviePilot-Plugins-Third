@@ -1,12 +1,12 @@
 {
     "DownloaderHelper": {
-        "name": "下载器助手",
+        "name": "下载器助手魔改版",
         "description": "自动标签、自动做种、自动删种。",
         "labels": "下载管理,仪表板",
-        "version": "4.0.6",
+        "version": "5.0.6",
         "release": true,
         "icon": "https://raw.githubusercontent.com/hotlcc/MoviePilot-Plugins-Third/main/icons/DownloaderHelper.png",
-        "author": "hotlcc",
+        "author": "gamevyo",
         "level": 1,
         "history": {
             "v4.0.6": "优化活动种子仪表板样式。",
